@@ -10,21 +10,19 @@ function userHasFinishDataCompletion(event){
     let prezzo = (kmTot*0.21);
 
     if(age=="minorenne"){
-        prezzo = (prezzo*0.8);
-
+       let prezzoMinorenni = (prezzo*0.8);
+       console.log(prezzoMinorenni.toFixed(2));
     }
 
     else if(age=="over65"){
-        prezzo = (prezzo*0.6);
+        let prezzoOver65 = (prezzo*0.6);
+        console.log(prezzoOver65.toFixed(2));
     }
 
     else{
-        prezzo=prezzo;
+        console.log(prezzo);
     }
 
-    let prezzoFinale = prezzo.toFixed(2);
-    console.log("il prezzo del tuo biglietto è di: " + prezzoFinale + "€");
 }
 
 
-document.getElementById("Prezzo-Biglietto").innerHTML = "Il prezzo del tuo biglietto: " + prezzoFinale+"€";
