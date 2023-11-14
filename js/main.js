@@ -1,6 +1,6 @@
 
 function userHasFinishDataCompletion(event){
-    event.preventDefaut();
+    event.preventDefault();
 
     let nameSurname = document.getElementById("nameSurname").value;
     let kmTot = document.getElementById("kmTot").value;
